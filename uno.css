@@ -1,0 +1,112 @@
+.planta {
+    background-color: brown;
+    width: 100px;
+    height: 70px;
+    border-radius: 100px 0px;
+    z-index: -1;
+    position: absolute;
+    top: 70px;
+    left: 123px;
+    transform: rotate(-80deg);
+    animation: bgAnim 3s infinite alternate;
+}
+
+.planta_dos {
+    background-color: brown;
+    width: 110px;
+    height: 60px; 
+    z-index: 2;
+    border-radius: 50px;
+    position: absolute;
+    top: 110px;
+    left: 125px;   
+}
+
+.planta_tres {
+    background-color: brown;
+    width: 160px;
+    height: 60px; 
+    z-index: 2;
+    border-radius: 50px;
+    position: absolute;
+    top: 150px;
+    left: 100px;   
+}
+
+.ojos_1{
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    position: absolute;
+    left: 145px;
+    top: 120px;
+    z-index: 3;
+    
+}
+
+.ojos_2{
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    position: absolute;
+    left: 190px;
+    top: 120px;
+    z-index: 3;
+    
+}
+
+.ojos_1::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    left: 5px;
+    top: 5px;
+
+}
+
+.ojos_2::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    left: 5px;
+    top: 5px;
+
+}
+
+.boca{
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 140px;
+    left: 167px;
+    border-radius: 0px 0px 10px 10px;
+    z-index: 4;
+    animation: bocaAnim 1s infinite alternate;
+}
+
+@keyframes bgAnim {
+    from{
+        transform: rotate(-80deg);
+    }
+    to {
+        transform: rotate(-40deg);
+    }
+}
+
+@keyframes bocaAnim{
+    from{
+        height: 20px;
+    }
+    to{
+        height: 10px;
+    }
+}
